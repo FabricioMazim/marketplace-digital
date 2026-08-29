@@ -42,5 +42,64 @@ Início | Marketplace Digital
     </div>
 
 </section>
+<section class="products-section">
+
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Produtos em destaque</h2>
+
+            <a href="#">
+                Ver todos
+            </a>
+        </div>
+
+        <div class="products-grid">
+
+            {% for product in products %}
+
+                <article class="product-card">
+
+                    <div class="product-card-content">
+
+                        <span class="product-tag">
+                            Produto digital
+                        </span>
+
+                        <h3>
+                            {{ product.name }}
+                        </h3>
+
+                        <p>
+                            {{ product.description|truncatechars:100 }}
+                        </p>
+
+                        <div class="product-footer">
+
+                            <strong>
+                                R$ {{ product.price }}
+                            </strong>
+
+                            <a href="#" class="product-link">
+                                Ver produto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            {% empty %}
+
+                <p>Nenhum produto disponível.</p>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
 
 {% endblock %}
