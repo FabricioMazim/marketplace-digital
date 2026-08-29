@@ -1,19 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <title>Marketplace Digital</title>
-</head>
+{% block title %}
+Início | Marketplace Digital
+{% endblock %}
 
-<body>
+{% block content %}
 
-    <h1>Marketplace Digital</h1>
+<section class="hero">
 
-    <p>Compre e venda produtos digitais em um só lugar.</p>
+    <div class="container hero-content">
 
-    <button>Explorar produtos</button>
+        <div class="hero-text">
 
-</body>
-</html>
+            <span class="hero-tag">
+                Marketplace de produtos digitais
+            </span>
+
+            <h1>
+                Encontre recursos para transformar suas ideias em projetos.
+            </h1>
+
+            <p>
+                Descubra templates, e-books, ferramentas, packs e outros
+                produtos digitais criados por vendedores independentes.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn-primary btn-large">
+                    Explorar produtos
+                </a>
+
+                <a href="#" class="btn-secondary btn-large">
+                    Começar a vender
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

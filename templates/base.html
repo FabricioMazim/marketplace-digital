@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Marketplace Digital{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="/" class="logo">
+                Marketplace Digital
+            </a>
+
+            <nav class="nav-links">
+                <a href="/">Início</a>
+                <a href="#">Explorar</a>
+                <a href="#">Categorias</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="login">Entrar</a>
+                <a href="#" class="btn-primary">Criar conta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
